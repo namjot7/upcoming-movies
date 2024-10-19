@@ -27,7 +27,7 @@ const showMovies = (data) => {
         console.log(result)     // Multiple objects are created for each item
 
         //  Display Image (Ternary Operator)
-        const imagePath = result.poster_path === null ? 'edited.png' : IMGPATH + result.poster_path;
+        const imagePath = result.poster_path === null ? 'notfound.png' : IMGPATH + result.poster_path;
 
         // Approx Rating
         const imdb = result.vote_average;
